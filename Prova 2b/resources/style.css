@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@font-face {
+    font-family: Ancient;
+    src: url('./fontes/Ancient\ Medium.ttf') format('opentype');
+    font-weight: 900;
+}
+
+* {
+    font-family: var(--FontePadrao);
+    color: var(--CorPadrao);
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+:root {
+    --CorPadrao: #e2e2e2;
+    --CorBackGround: #131313;
+    --CorMain: #252525;
+    --CorHeader:#393939;
+    --CorFooter: #010101;
+    --FontePadrao: Arial, sans-serif;
+    --FonteDestaque1: 'Oswald', sans-serif;
+    --FonteDestaque2: 'Ancient', monospace;
+
+}
+
+body {
+    background-color: var(--CorBackGround);
+
+}
+#LinkEsterior{    
+    color: var(--CorFooter);
+    font-size: large;
+}
+
+a#LinkEsterior::after {   
+        content: '🔗';
+        font-size: large;
+}
+
+header {
+    background-color: var(--CorHeader);    
+    margin: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 1px;
+}
+
+nav {
+    margin: 0;
+    background-color: var(--CorHeader);
+    padding: 10px;
+    text-decoration: dotted;
+}
+
+
+
+main {
+
+    background-color: var(--CorMain);
+    padding: 20px;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 4px 4px 10px black    ;
+    margin-top: 20px;
+}
+a{
+    text-decoration: dashed;
+    font-family: var(--FonteDestaque1);
+}
+nav > a {
+    
+    
+    font-size: larger;
+
+    padding-left:  8vw;
+    padding-right: 8vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 10px;
+
+}
+nav :hover{
+    background-color: var(--CorBackGround);
+}
+
+h1 {
+    font-size: 65px;
+    font-family: var(--FonteDestaque2);
+}
+
+
+.card{
+    width: 25vw;
+    height: 370px;
+    background-color: var(--CorBackGround);
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black    ;
+}
+
+.cardOutros{
+    width: 35vw;
+    height: 360px;
+    background-color: var(--CorBackGround);
+    display: inline-block;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px black    ;
+}
+
+.imgHistoria{
+    width: 50vw;
+    border-radius: 20px;
+}
+
+.imgCard{
+    width: 25vw;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+}
+
+.imgCardOutros{
+    width: 35vw;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+}
+
+#mainOutros {
+
+    background-color: var(--CorMain);
+    padding: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+aside{
+    background-color: var(--CorHeader);
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+
+footer{
+    background-color: var(--CorFooter);
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
